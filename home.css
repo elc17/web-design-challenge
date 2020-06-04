@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Pangolin', sans-serif;
+    color: black;
+}
+
+/*--- Navigation ---*/
+
+/* Set Navbar Properties */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .8)!important;
+}
+.navbar-brand{
+    color:lightgray;
+}
+
+/* Add padding between the list elements */
+.navbar-nav li{
+    padding-right: 0.7rem;
+}
+
+/* Add padding to the links */
+.navbar-dark .navbar-nav .nav-link {
+    color: lightgray;
+    padding-top: .8rem;
+}
+
+/* Add active-state color */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: yellowgreen;
+}
+
+/* Add active-state color to dropdown */
+.navbar-nav .dropdown-item:hover{
+    background-color: yellowgreen;
+}
+
+/*--- Landing Page ---*/
+.links{
+    padding-top: 2rem;
+}
+.links li{
+    padding: 0;
+    margin: 0.5rem 0.5rem;
+}
+.links li a{
+    color:black;
+}
+.links li a:hover{
+    background-color:yellowgreen;
+}
+.narrow{
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 8%;
+    color: black;
+}
+.narrow h1{
+    font-size: 2.4rem;
+    padding-bottom: 2.5rem;
+}
+
+/*--- Temperature ---*/
+.first-text{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+.explanation{
+    font-size: larger;
+}
+.temp-graphs{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.temp-graphs-comp{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.temp-graphs img{
+    width:100%;
+}
+.temp-graphs-comp img{
+    width: 100%;
+}
+.results{
+    padding-top: 20%;
+}
+.clients-hr{
+    border-top: .05rem solid yellowgreen;
+    padding-bottom: 5rem;
+    max-width: 100%;
+}
+.header-hr{
+    border-top: .05rem solid yellowgreen;
+    margin-top: 1%;
+    padding-bottom: 3.5%;
+    max-width: 100%;
+}
+.subtitle{
+    padding: 2rem 0 3rem 0;
+}
+
+.table-row{
+    max-width: 100%;
+}
+.table-responsive-md{
+    overflow:auto;
+}
+
+
+/*--- Media Queries ---*/
+@media (max-width: 767px) {
+    .narrow {
+        padding-top: 6rem;
+    }
+    .narrow h1{
+        font-size: 2rem;
+    }
+    .clients img{
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .results{
+        padding-top:5%;
+    }
+    .clients-hr{
+        border-top: .05rem solid yellowgreen;
+        padding-bottom: 3rem;
+    }
+    .temp-graphs{
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+    }
+    .temp-graphs-comp{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .header-hr{
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+    }
+    .comparisons{
+        padding-bottom: 3rem;
+    }
+}
+
+
+  /*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
