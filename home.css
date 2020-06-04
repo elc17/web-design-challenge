@@ -117,6 +117,9 @@ body {
 
 /*--- Media Queries ---*/
 @media (max-width: 767px) {
+    .narrow {
+        padding-top: 6rem;
+    }
     .narrow h1{
         font-size: 2rem;
     }
